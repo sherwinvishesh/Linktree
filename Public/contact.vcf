@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Sherwin Vishesh Jathanna
+N;CHARSET=UTF-8:Jathanna;Sherwin;Vishesh;;
+GENDER:M
+BDAY:20040830
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:admin@sherwinvishesh.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:sjathann@asu.edu
+URL;CHARSET=UTF-8:https://sherwinvishesh.com
+X-SOCIALPROFILE;TYPE=twitter:https://twitter.com/sherwinvishesh
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/sherwinvishesh
+X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/sherwinvishesh/
+X-SOCIALPROFILE;TYPE=youtube:https://youtube.com/@sherwinvishesh
+X-SOCIALPROFILE;TYPE=Website:https://sherwinvishesh.com
+REV:2024-01-23T22:24:14.126Z
+END:VCARD
