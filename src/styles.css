@@ -115,6 +115,7 @@ body, html {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    top: 145px;
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
@@ -135,3 +136,59 @@ body, html {
     background-color: black; /* Change background to black */
     color: white; /* Change text color to white */
 }
+
+.sharing-module {
+    position: relative; /* or absolute, depending on your layout needs */
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    
+}
+
+.qr-container {
+    width: 50%; /* Half the width for the QR code */
+    padding: 10px; /* Padding around the QR code */
+    box-sizing: border-box; /* Includes padding in the width */
+    
+}
+
+.qr-code {
+    width: 100%; /* Makes the QR code fill its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
+.button-container {
+    width: 50%; /* Half the width for the buttons */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distributes space above and below the buttons */
+    padding: 10px; /* Padding around the buttons */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
+.sharable-button {
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0; /* Space between buttons */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: if you want rounded corners */
+}
+
+.sharable-button i { /* Style for the FontAwesome icons */
+    color: inherit;
+    position: absolute;  /* Position the icon absolutely */
+    left: 250px; /* Distance from the left edge of the button */
+
+}
+
+.sharable-button:hover {
+    background-color: black; /* Change background to black */
+    color: white; /* Change text color to white */ /* Button hover state color */
+}
+
