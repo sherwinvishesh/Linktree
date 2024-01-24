@@ -192,3 +192,10 @@ body, html {
     color: white; /* Change text color to white */ /* Button hover state color */
 }
 
+.footer{
+    font-size: small;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    top:150px
+}
