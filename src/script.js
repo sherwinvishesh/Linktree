@@ -31,4 +31,3 @@ function shareLink() {
         alert('Link copied to clipboard');
     }
 }
-
