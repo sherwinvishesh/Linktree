@@ -1,0 +1,245 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.background-image {
+    background-image: url('https://raw.githubusercontent.com/sherwinvishesh/Linktree/main/Public/Background_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Needed for absolute positioning of links */
+    
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Take full width */
+    /*position: absolute; */
+    top: 30px; /* Adjust as needed */
+    position: static;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /* Same as the width of your background image */
+    background-color: black;
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 0 auto; /* Center the contact header */
+    position: absolute;
+    top: 30px; /* Position at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Circular profile picture */
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition:  color 0.3s;
+}
+
+.social-icon:hover {
+    color: gray; /* New color on hover */
+}
+
+
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.handel{
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.description {
+    color: white;
+    font-size: 15px;
+    
+}
+
+.links-container {
+    padding-top: 0px;
+   /* position: absolute; */
+    margin-top: calc(100px );
+    z-index: 20;
+    overflow-y: auto;
+    position:static;
+    
+    
+}
+
+.links-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.link {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center text horizontally */
+    width: 500px;
+    height: 5vh;
+    margin: 5px 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 5vh;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative; /* Position relative to allow absolute positioning of the icon */
+    padding-left: 40px; 
+}
+
+.link i {
+    position: absolute; /* Absolute position the icon */
+    left: 10px; /* Place it 10px from the left */
+    margin-right: 0;
+}
+
+.link:hover {
+    background-color: black;
+    color: white;
+}
+
+.link:hover i {
+    color: inherit; /* This ensures the icon inherits the same color as the text */
+}
+
+
+.sharingm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /* Same as the width of your background image */
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 0 auto; /* Center the contact header */
+    position: absolute;
+    top: 600px; /* Position at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Circular profile picture */
+    margin-bottom: 20px;
+    border: 5px solid black;
+}
+
+
+.button-container {
+    width: 60%; /* Half the width for the buttons */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distributes space above and below the buttons */
+    padding: 10px; /* Padding around the buttons */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
+.sharable-button {
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0; /* Space between buttons */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sharable-button i { /* Style for the FontAwesome icons */
+    color: inherit;
+    position: absolute;  /* Position the icon absolutely */
+    left: 250px; /* Distance from the left edge of the button */
+
+}
+
+.sharable-button:hover {
+    background-color: black; /* Change background to black */
+    color: white; /* Change text color to white */ /* Button hover state color */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /* Same as the width of your background image */
+    color: white; /* Sets the text color */
+    font-size: 18px; /* Sets the size of the text */
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 25px auto; /* Center the contact header */
+    position: absolute;
+    top: 800px; /* Position at the top */
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
+}
+
+
+
+
