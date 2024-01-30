@@ -114,17 +114,15 @@ body, html {
 }
 
 .links-container {
-    
-    
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the items horizontally */
     width: 100%; /* Take full width */
     /*position: absolute; */
-    top: 0px; /* Adjust as needed */
-    position: static;
-    z-index: 20;
-    margin-top: 70px;
+    top: 250px; /* Adjust as needed */
+    position: absolute;
+    margin-top: 100px;
+   z-index:20;
 }
 
 .links-container::-webkit-scrollbar {
