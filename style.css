@@ -114,14 +114,17 @@ body, html {
 }
 
 .links-container {
-    padding-top: 0px;
-   /* position: absolute; */
-    margin-top: calc(100px );
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Take full width */
+    /*position: absolute; */
+    top: 0px; /* Adjust as needed */
+    position: static;
     z-index: 20;
-    overflow-y: auto;
-    position:static;
-    
-    
+    margin-top: 70px;
 }
 
 .links-container::-webkit-scrollbar {
@@ -134,7 +137,7 @@ body, html {
     justify-content: center; /* Center text horizontally */
     width: 500px;
     height: 5vh;
-    margin: 5px 10px;
+    margin: 5px 15px;
     background-color: white;
     color: black;
     text-align: center;
@@ -241,5 +244,47 @@ body, html {
 }
 
 
+@media (max-width: 768px) {
+    .background-image {
+        background-size: cover; /* Ensures the background covers the screen */
+    }
 
+    .content-container {
+        width: 90%; /* Allows some padding on the sides */
+        margin-top: 30px; /* Adjust if needed */
+        position: relative; /* Removes absolute positioning */
+    }
+
+    .contact-header, .sharingm, .footer {
+        width: 100%; /* Full width of the container */
+        position: relative; /* Removes absolute positioning */
+        left: 0; /* Resets any left positioning */
+        transform: none; /* Resets any transformations */
+        margin-bottom: 20px; /* Adds space between sections */
+    }
+
+    .profile-pic, .qr-code {
+        width: 150px; /* Adjust the size of images for smaller screens */
+        height: 150px;
+    }
+
+    .link, .sharable-button {
+        width: auto; /* Allows buttons to adjust to container size */
+        margin: 10px; /* Adds some margin around the buttons */
+    }
+
+    .link i, .sharable-button i {
+        position: relative; /* Resets the position of the icons */
+        margin-right: 10px; /* Adds some margin to the right of the icon */
+        left: 0; /* Resets any left positioning */
+    }
+
+    .links-container, .button-container {
+        width: auto; /* Adjusts to fit within the parent container */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Adjusts the size of the social icons */
+    }
+}
 
