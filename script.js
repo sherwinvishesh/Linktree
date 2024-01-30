@@ -1,11 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".link");
+
+    links.forEach(link => {
+        link.addEventListener("click", (event) => {
+            console.log(`Link clicked: ${event.target.textContent}`);
+        });
+    });
+});
+
+
 function buttonAction(link) {
-    // Replace with actual link navigation or any other action
-    //console.log("Button clicked for:", link);
-    // For example, to navigate to a new page:
-    // window.location.href =  link;
     window.open(link, '_blank').focus();
 
 }
+
 
 function shareLink() {
     if (navigator.share) {
