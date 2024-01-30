@@ -1,167 +1,198 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
-    background-color: black; /* Sets the background of the entire page to black */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
     font-family: 'Lato', sans-serif;
+    
 }
 
-
-
-.background {
-    width: 547px; /* Set width of the background image container */
-    height: 824px; /* Set height of the background image container */
-    background-image: url('https://raw.githubusercontent.com/sherwinvishesh/Linktree/205f6207139509fb51be7fa638c4dd721c1e52e0/Public/Background_image.jpg');
-    background-size: cover;
+.background-image {
+    background-image: url('https://raw.githubusercontent.com/sherwinvishesh/Linktree/main/Public/Background_image.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Needed for absolute positioning of links */
+    
+}
+
+.content-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Take full width */
+    /*position: absolute; */
+    top: 30px; /* Adjust as needed */
+    position: static;
 }
 
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /* Same as the width of your background image */
+    background-color: black;
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 0 auto; /* Center the contact header */
+    position: absolute;
+    top: 30px; /* Position at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .profile-pic {
-    width: 200px; /* Set the width */
-    height: 200px; /* Set the height */
-    border-radius: 10%; /* Rounded edges */
-    position: absolute; /* Absolute positioning */
-    left: 20px; /* Distance from the left */
-    top: 40px; /* Distance from the top */
-    object-fit: cover; /* Ensure the image covers the area without stretching */
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Circular profile picture */
+    margin-bottom: 20px;
     border: 5px solid white;
 }
 
-.profile-info {
-    position: absolute; /* Absolute positioning */
-    top: 40px; /* Distance from the top of the parent container */
-    right: 10px; /* Distance from the right of the parent container */
-    color: white; /* Text color */
-     /* Background color */
-    /*padding: 20px;  Padding inside the text block */
-    /*   Rounded corners */
-    text-align: center; /* Text align to the center */
-    max-width: 250px; /* Maximum width of the text block, adjust as needed */
-}
-
-.profile-info h1,
-.profile-info h2,
-.profile-info h3 {
-    margin: 0 0 10px 0; /* Spacing between text elements */
-    background-color: black;
-    border-radius: 10%;
-}
-
-.profile-info h3 {
-    font-weight: normal; /* Normal font weight for the lorem ipsum text */
-}
-
-.profile-info h1 {
-    margin: 0;
-    font-size: 2.5em; /* Adjust font size as needed */
-}
-
-.profile-info h2 {
-    margin: 0;
-    font-size: 1.0em; /* Adjust font size as needed */
-    text-align: center;
-    border-radius: 35%;
-    
-}
-
-.profile-info h3 {
-    margin-top: 10px; /* Space above the h3 text */
-    font-size: 1em; /* Adjust font size as needed */
-    font-weight: normal; /* Normal font weight for the lorem ipsum text */
-    align-items: center;
-    text-align: center;
-}
-
-
 .socials {
-    display: flex; /* Align the social icons in a row */
-    justify-content: center; /* Center the icons horizontally */
-    position: absolute; /* Position the social icons absolutely */
-    left: 35px; /* Align the left edge with the container */
-    left: 0; /* Align the right edge with the container */
-    top: 260px; /* Position below the profile pic, adjust the value based on your layout */
-    background-color: black; 
-    padding: 10px; /* Padding around the icons */
-    border-radius: 10px; /* Rounded corners for the background */
-     
+    display: flex;
+    justify-content: center;
 }
 
 .social-icon {
-    margin: 0 10px; /* Spacing between icons */
-    color: #fff; /* Icon color, change as needed */
-    font-size: 27px; /* Icon size, change as needed */
-    text-decoration: none; /* Remove underline from icons */
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition:  color 0.3s;
 }
 
 .social-icon:hover {
-    color: #555; /* Icon hover color, change as needed */
+    color: gray; /* New color on hover */
 }
 
-.button {
-    width: 450px; /* Set the width of the buttons */
-    margin: 10px;
-    padding: 15px 30px;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    top: 145px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+
+.text-section {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centers the content (icon + text) in the button */
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.handel{
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.description {
+    color: white;
+    font-size: 15px;
+    
+}
+
+.links-container {
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    width: 100%; /* Take full width */
+    /*position: absolute; */
+    top: 0px; /* Adjust as needed */
+    position: static;
+    z-index: 20;
+    margin-top: 70px;
+}
+
+.links-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.link {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center text horizontally */
+    width: 500px;
+    height: 5vh;
+    margin: 5px 15px;
+    background-color: white;
+    color: black;
     text-align: center;
-    position: relative;
+    line-height: 5vh;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative; /* Position relative to allow absolute positioning of the icon */
+    padding-left: 40px; 
 }
 
-.button i { /* Style for the FontAwesome icons */
-    color: inherit;
-    position: absolute;  /* Position the icon absolutely */
-    left: 15px; /* Distance from the left edge of the button */
-
+.link i {
+    position: absolute; /* Absolute position the icon */
+    left: 10px; /* Place it 10px from the left */
+    margin-right: 0;
 }
 
-.button:hover {
-    background-color: black; /* Change background to black */
-    color: white; /* Change text color to white */
+.link:hover {
+    background-color: black;
+    color: white;
 }
 
-.sharing-module {
-    position: relative; /* or absolute, depending on your layout needs */
-    top: 130px;
+.link:hover i {
+    color: inherit; /* This ensures the icon inherits the same color as the text */
+}
+
+
+.sharingm {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 450px;
-    margin: 20px auto; /* Centers the container and adds vertical spacing */
-    
-}
-
-.qr-container {
-    width: 50%; /* Half the width for the QR code */
-    padding: 10px; /* Padding around the QR code */
-    box-sizing: border-box; /* Includes padding in the width */
-    
+    width: 500px; /* Same as the width of your background image */
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 0 auto; /* Center the contact header */
+    position: absolute;
+    top: 600px; /* Position at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
 }
 
 .qr-code {
-    width: 100%; /* Makes the QR code fill its container */
-    height: auto; /* Keeps the aspect ratio of the image */
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Circular profile picture */
+    margin-bottom: 20px;
+    border: 5px solid black;
 }
 
+
 .button-container {
-    width: 50%; /* Half the width for the buttons */
+    width: 60%; /* Half the width for the buttons */
     display: flex;
     flex-direction: column;
     justify-content: space-around; /* Distributes space above and below the buttons */
@@ -173,11 +204,13 @@ body, html {
     background-color: #ffffff; /* Button background color */
     color: #000000; /* Button text color */
     text-align: center;
+    text-decoration: none;
     padding: 10px 20px;
-    margin: 10px 0; /* Space between buttons */
+    margin: 5px 0; /* Space between buttons */
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Optional: if you want rounded corners */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .sharable-button i { /* Style for the FontAwesome icons */
@@ -192,10 +225,20 @@ body, html {
     color: white; /* Change text color to white */ /* Button hover state color */
 }
 
-.footer{
-    font-size: small;
-    color: white;
-    position: relative;
-    bottom: 0px;
-    top:150px
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /* Same as the width of your background image */
+    color: white; /* Sets the text color */
+    font-size: 18px; /* Sets the size of the text */
+    border-radius: 10%; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* To include padding in the width */
+    margin: 25px auto; /* Center the contact header */
+    position: absolute;
+    top: 800px; /* Position at the top */
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 20; /* Above all other content */
 }
