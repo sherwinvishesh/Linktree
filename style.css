@@ -17,7 +17,8 @@ body, html {
     background-attachment: fixed;
 
     width: 100vw;
-    height: 100vh;
+    height: auto; /* Remove fixed height */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,15 +115,18 @@ body, html {
 }
 
 .links-container {
+    
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the items horizontally */
-    width: 100%; /* Take full width */
+    width: 80%; /* Take full width */
     /*position: absolute; */
     top: 250px; /* Adjust as needed */
     position: absolute;
     margin-top: 100px;
    z-index:20;
+   
+
 }
 
 .links-container::-webkit-scrollbar {
@@ -134,8 +138,8 @@ body, html {
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center text horizontally */
     width: 500px;
-    height: 5vh;
-    margin: 5px 15px;
+    height: 50px;
+    margin: 5px 10px;
     background-color: white;
     color: black;
     text-align: center;
@@ -146,6 +150,7 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
     position: relative; /* Position relative to allow absolute positioning of the icon */
     padding-left: 40px; 
+    border-top: 10px;
 }
 
 .link i {
@@ -240,3 +245,16 @@ body, html {
     transform: translateX(-50%);
     z-index: 20; /* Above all other content */
 }
+
+
+@media screen and (max-width: 600px) {
+    .background-image{
+        width: 100%;
+    }
+    .contact-header, .links-container, .sharingm, .footer {
+        width: 90%; /* Adjust width for smaller screens */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
