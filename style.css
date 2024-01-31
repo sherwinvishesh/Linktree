@@ -259,9 +259,11 @@ body, html {
     
     }
     .contact-header, .sharingm, .footer {
-        width: 50%; /* Adjust width for smaller screens */
-        left: 30%;
+
+         width: 90%; /* Adjust width for smaller screens */
+        left: 50%;
         transform: translateX(-50%);
+        
     }
 
     .links-container{
