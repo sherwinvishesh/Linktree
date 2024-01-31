@@ -119,7 +119,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the items horizontally */
-    width: 500px; /* Take full width */
+    width: 90%; /* Take full width */
     /*position: absolute; */
     top: 250px; /* Adjust as needed */
     position: absolute;
