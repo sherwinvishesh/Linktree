@@ -119,7 +119,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the items horizontally */
-    width: 80%; /* Take full width */
+    width: 500px; /* Take full width */
     /*position: absolute; */
     top: 250px; /* Adjust as needed */
     position: absolute;
@@ -258,10 +258,14 @@ body, html {
         height: auto;
     
     }
-    .contact-header, .links-container, .sharingm, .footer {
+    .contact-header, .sharingm, .footer {
         width: 90%; /* Adjust width for smaller screens */
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .links-container{
+        width: 80%;
     }
 }
 
