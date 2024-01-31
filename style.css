@@ -137,7 +137,7 @@ body, html {
     display: flex; /* Use flexbox for positioning */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center text horizontally */
-    width: 80%;
+    width: 500px;
     height: 50px;
     margin: 5px 10px;
     background-color: white;
@@ -265,6 +265,10 @@ body, html {
     }
 
     .links-container{
+        width: 80%;
+    }
+
+    .link{
         width: 80%;
     }
 }
