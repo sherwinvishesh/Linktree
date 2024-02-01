@@ -25,7 +25,7 @@ The Linktree page is designed to provide a convenient, one-stop location where f
 
 Here's a quick look at what you can expect from the Linktree:
 
-![Linktree Preview](https://raw.githubusercontent.com/sherwinvishesh/)
+![Linktree Screenshot](https://raw.githubusercontent.com/sherwinvishesh/Linktree/main/Public/Screenshot.png)
 
 ## How to Use
 
