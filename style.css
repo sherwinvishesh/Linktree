@@ -379,7 +379,7 @@ body, html {
     margin: 0 auto; /* Center the contact header */
     position: absolute;
     top: 600px; /* Position at the top */
-    left: 50%;
+    
     transform: translateX(-50%);
     z-index: 20; /* Above all other content */
 }
@@ -418,7 +418,7 @@ body, html {
 .sharable-button i { /* Style for the FontAwesome icons */
     color: inherit;
     position: absolute;  /* Position the icon absolutely */
-    left: 250px; /* Distance from the left edge of the button */
+    left: 0px; /* Distance from the left edge of the button */
 
 }
 
@@ -440,8 +440,6 @@ body, html {
     margin: 15px auto; /* Center the contact header */
     position: absolute;
     top: 800px; /* Position at the top */
-    left: 60%;
-    transform: translateX(-50%);
     z-index: 20; /* Above all other content */
 }
 }
